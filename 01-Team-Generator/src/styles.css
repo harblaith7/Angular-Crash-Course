@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+@import "semantic-ui-css/semantic.css";
+
+li {
+  list-style: none;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
