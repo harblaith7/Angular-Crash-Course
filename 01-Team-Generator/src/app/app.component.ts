@@ -21,7 +21,7 @@ export class AppComponent {
   }
 
   onClick() {
-    if (!this.newMemberText.length) {
+    if (!this.newMemberText.trim().length) {
       this.errorMessage = "Name can't be empty";
       return;
     }
