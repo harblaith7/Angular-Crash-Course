@@ -34,7 +34,9 @@ export class AppComponent {
   generateTeams() {
     this.teams = [];
     const allMembers = [...this.members];
-
+    if ( this.numberOfTeams < 1 ) {
+      return;
+    }
     if (this.members.length < this.numberOfTeams) {
       this.errorMessage = 'Not enough members';
       return;
